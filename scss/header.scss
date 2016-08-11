@@ -1,39 +1,21 @@
 @import "bourbon";
 @import "vars.scss";
+@import "../libs/lightslider/dist/css/lightslider.min.css";
+
 
 body{
-	font-size: 16px;
-	min-width: 320px;
-	position: relative;
-	line-height: 1.6;
-	font-family: "RobotoRegular", sans-serif;
-	overflow-x: hidden;
-	background-color: #fff;
+	font-family: "RobotoRegular";
 }
-
-a,button,input,textarea{
-	text-decoration: none;
-	outline: 0;
-	border: 0;
-	@include transition(color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease);
-	&:focus{
-		outline: 0;
-		border: 0;
-	}
-}
-
-button{
-	&:hover{
-		cursor: pointer;
-	}
-}
-
-.hidden{
-	display: none;
-}
-
-.wrapper{
-	width: 960px;
+.inner{
+	max-width: 1024px;
 	margin: 0 auto;
-	overflow: hidden;
+}
+.header-top{
+	background-color: rgba(0, 0, 0, 0.48);
+	height: 113px;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 2;
 }

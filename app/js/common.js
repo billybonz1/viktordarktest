@@ -8,12 +8,17 @@ $(function() {
 		}
 	} catch(err) {
 
-	};
+	}
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
-	// fancybox
-	$("a.modal").fancybox();
+	$('#adaptive').lightSlider({
+		adaptiveHeight:true,
+		item:1,
+		slideMargin:0,
+		loop:true
+	});
+
 });
 
 //Форма отправки 2.0
