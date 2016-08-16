@@ -43,7 +43,8 @@ p{
 .p-thin{
     color: #fff;
     font-size: 30px;
-    line-height: 30px;
+    font-weight: 300;
+    line-height: 35px;
 }
 .p-small{
     font-size: 14px;
@@ -65,7 +66,8 @@ p{
     background-color: #ce334c;
     border-radius: 9px;
     height: 47px;
-    position: relative;
+    border: 0;
+    transition: .1s all;
     &:after{
         content: '';
         opacity: 0.2;
@@ -76,7 +78,7 @@ p{
         top: 0;
         left: 0;
         width: 100%;
-        @include transition(color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease);
+        transition: .1s all;
         height: 50%;
     }
     &:hover{

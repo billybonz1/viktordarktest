@@ -1,5 +1,4 @@
 $(function() {
-
 	//Chrome Smooth Scroll
 	try {
 		$.browserSelector();
@@ -12,17 +11,36 @@ $(function() {
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
+
+
+
 	$('#adaptive').lightSlider({
 		adaptiveHeight:true,
 		item:1,
 		slideMargin:0,
-		loop:true
+		loop:true,
+		prevHtml: "<i class='icon icon-arrow-left'></i>",
+		nextHtml: "<i class='icon icon-arrow-right'></i>",
 	});
 
+	$('.gamburger').on('click',function(){
+		$(this).toggleClass('active');
+		$(".top-menu").toggleClass('active');
+	});
+
+	$(document).on("click",function(event){
+		if( $(event.target).closest(".top-menu,.gamburger").length )return;
+		$('.gamburger').toggleClass('active');
+		$(".top-menu").toggleClass('active');
+		event.stopPropagation();
+	});
 });
 
 //Форма отправки 2.0
 $(function() {
+
+
+
 	$("[name=send]").click(function () {
 		$(":input.error").removeClass('error');
 		$(".allert").remove();

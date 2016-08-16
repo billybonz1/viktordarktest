@@ -1,3 +1,46 @@
+.icon {
+  display: inline-block; }
+
+.icon-arrow-left {
+  background: url(../img/icons/icon_arrow-left.png);
+  width: 22px;
+  height: 31px; }
+
+.icon-arrow-right {
+  background: url(../img/icons/icon_arrow-right.png);
+  width: 22px;
+  height: 31px; }
+
+.icon-car {
+  background: url("../img/icons/icon_car.png");
+  width: 105px;
+  height: 75px; }
+
+.icon-key {
+  background: url("../img/icons/icon_key.png");
+  width: 107px;
+  height: 92px; }
+
+.icon-carwash {
+  background: url("../img/icons/icon_carwash.png");
+  width: 135px;
+  height: 92px; }
+
+.icon-repair {
+  background: url("../img/icons/icon_repair.png");
+  width: 122px;
+  height: 89px; }
+
+.icon-cars {
+  background: url("../img/icons/icon_cars.png");
+  width: 187px;
+  height: 84px; }
+
+.icon-document {
+  background: url("../img/icons/icon_document.png");
+  width: 78px;
+  height: 94px; }
+
 *::-webkit-input-placeholder {
   color: #666;
   opacity: 1; }
@@ -22,36 +65,32 @@ body input:required:valid,
 body textarea:required:valid {
   color: #666; }
 
-footer {
-  background-color: #000000;
-  width: 100%;
-  overflow: hidden;
-  padding-top: 11px;
-  padding-bottom: 2px; }
-  footer ul {
-    margin-top: 19px;
-    float: left;
-    padding-left: 0;
-    padding-right: 0; }
-    footer ul li {
-      float: left;
-      margin-right: 20px; }
-      footer ul li a {
-        text-decoration: none;
-        color: #616161;
-        font-size: 16px; }
-      footer ul li a:hover {
-        text-decoration: none;
-        color: #fff; }
-  footer .gs {
-    float: right;
-    margin: 9px;
-    margin-right: 15px;
-    display: block; }
-  footer .gs:visited, footer .gs:active {
-    text-decoration: none; }
+.about-company__content h4 {
+  color: #161616; }
+
+.auto-repair {
+  background-color: #38569b;
+  text-align: center; }
+  .auto-repair h2 {
+    text-align: center;
+    padding-top: 52px; }
+  .auto-repair p {
+    color: #FFFFFF; }
+
+.auto-repair__item {
+  padding: 65px 0px; }
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1020px) {
+  .top-menu li {
+    padding: 0 10px; } }
+
+@media only screen and (max-width: 1017px) {
+  .header-bot__item {
+    padding: 8px 2.3vw; }
+    .header-bot__item.p-thin {
+      font-size: 3vw; } }
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .wrapper {
@@ -73,6 +112,55 @@ footer {
     footer .gs {
       float: none;
       display: block; } }
+
+.auto-repair__item {
+  padding: 40px 0px; }
+
+@media only screen and (max-width: 991px) {
+  .header-top {
+    height: auto;
+    padding-bottom: 35px; }
+  .gamburger {
+    display: block; }
+    .gamburger span {
+      -webkit-transition: .4s all;
+      transition: .4s all; }
+    .gamburger.active span:first-child {
+      -webkit-transform: rotate(45deg) translateX(6px) translateY(6px);
+      -ms-transform: rotate(45deg) translateX(6px) translateY(6px);
+      transform: rotate(45deg) translateX(6px) translateY(6px); }
+    .gamburger.active span:nth-child(2) {
+      -webkit-transform: rotate(-45deg) translateX(-1px) translateY(0px);
+      -ms-transform: rotate(-45deg) translateX(-1px) translateY(0px);
+      transform: rotate(-45deg) translateX(-1px) translateY(0px); }
+    .gamburger.active span:last-child {
+      opacity: 0; }
+  .top-menu {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    -webkit-transition: .6s all;
+    transition: .6s all; }
+    .top-menu ul {
+      -webkit-transition: 1s all;
+      transition: 1s all;
+      -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+      transform: scale(0); }
+    .top-menu li {
+      display: block; }
+      .top-menu li a {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        display: block; }
+    .top-menu.active {
+      height: 295px;
+      padding: 10px 0; }
+      .top-menu.active ul {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1); } }
 
 /* Small Devices, Tablets */
 /* Extra Small Devices, Phones */
@@ -124,7 +212,8 @@ p {
 .p-thin {
   color: #fff;
   font-size: 30px;
-  line-height: 30px; }
+  font-weight: 300;
+  line-height: 35px; }
 
 .p-small {
   font-size: 14px;
@@ -147,7 +236,9 @@ p {
   -webkit-border-radius: 9px;
   border-radius: 9px;
   height: 47px;
-  position: relative; }
+  border: 0;
+  -webkit-transition: .1s all;
+  transition: .1s all; }
   .btn-red:after {
     content: '';
     opacity: 0.2;
@@ -159,8 +250,8 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    -webkit-transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
-    transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
+    -webkit-transition: .1s all;
+    transition: .1s all;
     height: 50%; }
   .btn-red:hover {
     background-color: #bb2d44; }
