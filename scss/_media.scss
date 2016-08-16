@@ -1,3 +1,4 @@
+
 @import "bourbon";
 @import "vars.scss";
 
@@ -50,6 +51,14 @@
 			display: block;
 		}
 	}
+.auto-parts__item{
+	display: inline-block;
+	float: none;
+	min-width: 500px;
+}
+.auto-parts{
+	text-align: center;
+}
 }
 .auto-repair__item {
 	padding: 40px 0px;
@@ -110,7 +119,16 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+	.auto-parts__item{
+		min-width: 320px;
+		h4{
+			font-size: 20px;
+		}
+	}
+	.auto-parts__item-c{
+		width: 100%;
+		text-align: center;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -118,6 +136,7 @@
 	.pad{
 		padding: 20px 5px !important;
 	}
+
 	// 100% ширина окна
 	// .fancybox-wrap{
 	// 	width: 100% !important;

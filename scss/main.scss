@@ -38,7 +38,13 @@ body textarea:required:valid{
         color: #161616;
     }
 }
-
+.about-company__slider{
+    margin: 0px 0px 0 19px;
+    max-width: 898px;
+    .lSAction>a{
+        background: none;
+    }
+}
 
 
 
@@ -55,6 +61,48 @@ body textarea:required:valid{
 }
 .auto-repair__item{
     padding: 65px 0px;
+    i{
+        min-height: 94px;
+    }
+}
+.auto-parts{
+    h1{
+        text-align: center;
+    }
+}
+.auto-parts__item{
+    float: left;
+    width: 50%;
+    height: 416px;
+    text-align: center;
+    padding-top: 16%;
+    h4{
+        margin: 0;
+    }
+    p{
+        color: #ffffff;
+        margin: 0;
+    }
+}
+.auto-parts__item_bg1{
+    background: url("../img/raster/repairer.png");
+}
+.auto-parts__item_bg2{
+    background: url("../img/raster/thumb.png");
+}
+.auto-parts__item_bg3{
+    background: url("../img/raster/oil.png");
+}
+.auto-parts__item_bg4{
+    background: url("../img/raster/manbox.png");
+}
+.auto-parts__item-c{
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    i{
+        margin-right: 11px;
+    }
 }
 
 

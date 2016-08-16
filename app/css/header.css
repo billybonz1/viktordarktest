@@ -12,6 +12,16 @@
   width: 22px;
   height: 31px; }
 
+.icon-arrow-left-blue {
+  background: url(../img/icons/icon_arrow-left-blue.png);
+  width: 20px;
+  height: 29px; }
+
+.icon-arrow-right-blue {
+  background: url(../img/icons/icon_arrow-right-blue.png);
+  width: 20px;
+  height: 29px; }
+
 .icon-car {
   background: url("../img/icons/icon_car.png");
   width: 105px;
@@ -41,6 +51,26 @@
   background: url("../img/icons/icon_document.png");
   width: 78px;
   height: 94px; }
+
+.icon-settings {
+  background: url("../img/icons/icon_settings.png");
+  width: 50px;
+  height: 46px; }
+
+.icon-wheel {
+  background: url("../img/icons/icon_wheel.png");
+  width: 49px;
+  height: 45px; }
+
+.icon-cask {
+  background: url("../img/icons/icon_cask.png");
+  width: 33px;
+  height: 51px; }
+
+.icon-box {
+  background: url("../img/icons/icon_box.png");
+  width: 49px;
+  height: 55px; }
 
 body {
   font-family: Roboto;
@@ -92,25 +122,26 @@ header {
         -webkit-transition: 0.3s;
         transition: 0.3s; }
 
-.lSSlideOuter {
+.lSSlideOuter.header-slider {
   position: relative; }
-  .lSSlideOuter .lSPager.lSpg {
+  .lSSlideOuter.header-slider .lSPager.lSpg {
     position: absolute;
     width: 100%;
     bottom: 210px; }
-    .lSSlideOuter .lSPager.lSpg > li {
+    .lSSlideOuter.header-slider .lSPager.lSpg > li {
       margin: 0 5px; }
-      .lSSlideOuter .lSPager.lSpg > li a {
+      .lSSlideOuter.header-slider .lSPager.lSpg > li a {
         background-color: #fff;
         height: 10px;
         width: 10px;
         -webkit-box-shadow: 0 0 0px 2.5px #fff;
         box-shadow: 0 0 0px 2.5px #fff; }
+      .lSSlideOuter.header-slider .lSPager.lSpg > li.active a {
+        background-color: #94a3fc; }
+  .lSSlideOuter.header-slider .lSAction > a {
+    background: none; }
 
-.lSAction > a {
-  background: none; }
-
-.gallery li {
+.header-slider.gallery li {
   min-height: 810px;
   background-position: center; }
 
@@ -132,10 +163,10 @@ header {
   .header-bot__item:last-child {
     border: 0; }
 
-#adaptive {
+.header-slider {
   padding: 0;
   margin: 0; }
-  #adaptive li {
+  .header-slider li {
     background-position: center top; }
 
 .gamburger {

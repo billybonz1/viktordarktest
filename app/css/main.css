@@ -11,6 +11,16 @@
   width: 22px;
   height: 31px; }
 
+.icon-arrow-left-blue {
+  background: url(../img/icons/icon_arrow-left-blue.png);
+  width: 20px;
+  height: 29px; }
+
+.icon-arrow-right-blue {
+  background: url(../img/icons/icon_arrow-right-blue.png);
+  width: 20px;
+  height: 29px; }
+
 .icon-car {
   background: url("../img/icons/icon_car.png");
   width: 105px;
@@ -41,6 +51,26 @@
   width: 78px;
   height: 94px; }
 
+.icon-settings {
+  background: url("../img/icons/icon_settings.png");
+  width: 50px;
+  height: 46px; }
+
+.icon-wheel {
+  background: url("../img/icons/icon_wheel.png");
+  width: 49px;
+  height: 45px; }
+
+.icon-cask {
+  background: url("../img/icons/icon_cask.png");
+  width: 33px;
+  height: 51px; }
+
+.icon-box {
+  background: url("../img/icons/icon_box.png");
+  width: 49px;
+  height: 55px; }
+
 *::-webkit-input-placeholder {
   color: #666;
   opacity: 1; }
@@ -68,6 +98,12 @@ body textarea:required:valid {
 .about-company__content h4 {
   color: #161616; }
 
+.about-company__slider {
+  margin: 0px 0px 0 19px;
+  max-width: 898px; }
+  .about-company__slider .lSAction > a {
+    background: none; }
+
 .auto-repair {
   background-color: #38569b;
   text-align: center; }
@@ -79,6 +115,42 @@ body textarea:required:valid {
 
 .auto-repair__item {
   padding: 65px 0px; }
+  .auto-repair__item i {
+    min-height: 94px; }
+
+.auto-parts h1 {
+  text-align: center; }
+
+.auto-parts__item {
+  float: left;
+  width: 50%;
+  height: 416px;
+  text-align: center;
+  padding-top: 16%; }
+  .auto-parts__item h4 {
+    margin: 0; }
+  .auto-parts__item p {
+    color: #ffffff;
+    margin: 0; }
+
+.auto-parts__item_bg1 {
+  background: url("../img/raster/repairer.png"); }
+
+.auto-parts__item_bg2 {
+  background: url("../img/raster/thumb.png"); }
+
+.auto-parts__item_bg3 {
+  background: url("../img/raster/oil.png"); }
+
+.auto-parts__item_bg4 {
+  background: url("../img/raster/manbox.png"); }
+
+.auto-parts__item-c {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left; }
+  .auto-parts__item-c i {
+    margin-right: 11px; }
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1020px) {
@@ -111,7 +183,13 @@ body textarea:required:valid {
         float: none; }
     footer .gs {
       float: none;
-      display: block; } }
+      display: block; }
+  .auto-parts__item {
+    display: inline-block;
+    float: none;
+    min-width: 500px; }
+  .auto-parts {
+    text-align: center; } }
 
 .auto-repair__item {
   padding: 40px 0px; }
@@ -163,6 +241,15 @@ body textarea:required:valid {
         transform: scale(1); } }
 
 /* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .auto-parts__item {
+    min-width: 320px; }
+    .auto-parts__item h4 {
+      font-size: 20px; }
+  .auto-parts__item-c {
+    width: 100%;
+    text-align: center; } }
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .pad {
@@ -172,7 +259,8 @@ h1 {
   color: #0f335b;
   font-size: 36px;
   font-weight: 900;
-  line-height: 36px; }
+  line-height: 36px;
+  margin: 47px 0; }
 
 h2 {
   font-size: 30px;
