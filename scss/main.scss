@@ -34,20 +34,24 @@ body textarea:required:valid{
 
 //Custom Styles Here
 .about-company__content{
+    p{
+        padding-bottom: 40px;
+    }
     h4{
         color: #161616;
     }
 }
 .about-company__slider{
-    margin: 0px 0px 0 19px;
-    max-width: 898px;
     .lSAction>a{
         background: none;
     }
+    .gallery > li{
+        padding: 0 63px;
+    }
 }
-
-
-
+.about-company{
+    padding-bottom: 75px;
+}
 .auto-repair{
     background-color: #38569b;
     text-align: center;
@@ -104,6 +108,11 @@ body textarea:required:valid{
         margin-right: 11px;
     }
 }
+.order{
+    text-align: center;
+}
+
+
 
 
 

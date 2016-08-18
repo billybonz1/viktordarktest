@@ -28,8 +28,8 @@ $(function() {
 		item:1,
 		slideMargin:0,
 		loop:true,
-		prevHtml: "<i class='icon icon-arrow-left'></i>",
-		nextHtml: "<i class='icon icon-arrow-right'></i>",
+		prevHtml: "<i class='icon icon-arrow-left-blue'></i>",
+		nextHtml: "<i class='icon icon-arrow-right-blue'></i>",
 		addClass: 'about-company__slider',
 		pager:false
 	});
