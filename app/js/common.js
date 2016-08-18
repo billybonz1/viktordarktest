@@ -33,6 +33,16 @@ $(function() {
 		addClass: 'about-company__slider',
 		pager:false
 	});
+	$('#reviews').lightSlider({
+		adaptiveHeight:true,
+		item:1,
+		slideMargin:0,
+		loop:true,
+		prevHtml: "<i class='icon icon-arrow-left-blue'></i>",
+		nextHtml: "<i class='icon icon-arrow-right-blue'></i>",
+		addClass: 'reviews',
+		pager:false
+	});
 
 	$('.gamburger').on('click',function(){
 		$(this).toggleClass('active');

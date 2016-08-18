@@ -56,6 +56,7 @@ body textarea:required:valid{
     background-color: #38569b;
     text-align: center;
     h2{
+        color: #fff;
         text-align: center;
         padding-top: 52px;
     }
@@ -111,8 +112,57 @@ body textarea:required:valid{
 .order{
     text-align: center;
 }
-
-
+.order__content__item{
+    padding-top: 110px;
+    p{
+        max-width: 207px;
+        margin: 0 auto;
+        padding-top: 15px;
+    }
+    h4{
+        margin: 0px;
+        padding-top: 25px;
+    }
+}
+.reviews-slider{
+    h2{
+        text-align: center;
+    }
+}
+.reviews-slider__border{
+    border: 2px solid #7d9ddc;
+    margin-top: 85px;
+}
+.reviews{
+    ul{
+        li{
+            padding: 93px 0;
+        }
+    }
+}
+.rs__info{
+    padding-left: 100px;
+}
+.rs__name{
+    color: #141414;
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.rs__car{
+    text-align: left;
+}
+.rs__text{
+    max-width: 620px;
+    border-left: 2px solid #7d9ddc;
+    color: #141414;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-left: 48px;
+}
 
 
 
