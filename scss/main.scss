@@ -163,6 +163,107 @@ body textarea:required:valid{
     padding-bottom: 25px;
     padding-left: 48px;
 }
+.images__content{
+    margin-top: 80px;
+}
+.images__content__item{
+    margin: 0 auto;
+    padding: 0px 0px;
+    max-height: 227px;
+    img{
+        width: 100%;
+        height: auto;
+        max-height: 228px;
+    }
+}
+.maps__content{
+    padding-left: 65px;
+    padding-top: 25px;
+}
+.btn-red-maps{
+    margin-top: 50px;
+    margin-left: 245px;
+    margin-bottom: 45px;
+}
+.slider-car{
+    background: #ededed;
+    padding: 15px 0;
+    .lSSlideOuter  {
+        padding: 0 37px;
+    }
+    .lSAction{
+        a{
+            background-image: none;
+            text-shadow: 0.5px 0.9px 0 rgba(0, 1, 1, 0.75);
+            color: white;
+            font-size: 24px;
+            font-weight: 400;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        .lSNext{
+            text-align: right;
+        }
+    }
+}
+.slider-brands{
+
+
+    li{
+        background-color: #cfcfcf;
+        border-radius: 5px;
+        min-height: 49px;
+        position: relative;
+        img{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: #38569b;
+    height: 115px;
+}
+.footer__h{
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 40px 0;
+    padding-right: 60px;
+}
+.footer__p{
+    color: white;
+    font-family: "Segoe UI";
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+}
+.footer-social{
+    margin-top: 40px;
+    i{
+        max-height: 35px;
+        margin-right: 5px;
+    }
+}
+
 
 
 

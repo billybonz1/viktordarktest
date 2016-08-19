@@ -24,45 +24,22 @@
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
-	.wrapper{
-		width: auto;
+	.auto-parts__item{
+		display: inline-block;
+		float: none;
+		min-width: 500px;
 	}
-	.pad{
-		padding: 50px 5px !important;
-	}
-	footer{
+	.auto-parts{
 		text-align: center;
-		.wrapper{
-			width: auto;
-		}
-		ul{
-			float: none;
-			display: inline-block;
-			text-align: center;
-			li{
-				margin-bottom: 10px;
-				margin-right: 0;
-				float: none;
-			}
-		}
-		.gs{
-			float: none;
-			display: block;
-		}
 	}
-.auto-parts__item{
-	display: inline-block;
-	float: none;
-	min-width: 500px;
+	.auto-repair__item {
+		padding: 40px 0px;
+	}
+	.maps__content {
+		padding-left: 0px;
+	}
 }
-.auto-parts{
-	text-align: center;
-}
-}
-.auto-repair__item {
-	padding: 40px 0px;
-}
+
 
 @media only screen and (max-width : 991px) {
 	.header-top{
@@ -129,14 +106,40 @@
 		width: 100%;
 		text-align: center;
 	}
+	.images__content__item {
+		margin: 0px 0px;
+		margin-left: 160px;
+		padding: 0px 0px;
+		width: 50%;
+	}
+	.maps__content{
+		padding-left: 80px;
+	}
 }
-
+@media only screen and (max-width : 625px) {
+	.maps__content{
+		padding-left: 55px;
+	}
+}
+@media only screen and (max-width: 525px) {
+	.maps__content {
+		padding-left: 40px;
+	}
+}
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	.pad{
 		padding: 20px 5px !important;
 	}
-
+	.images__content__item {
+		margin: 0px 0px;
+		margin-left: 60px;
+		padding: 0px 0px;
+		width: 70%;
+	}
+	.maps__content{
+		padding-left: 0px;
+	}
 	// 100% ширина окна
 	// .fancybox-wrap{
 	// 	width: 100% !important;
