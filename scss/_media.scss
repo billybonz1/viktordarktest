@@ -4,7 +4,22 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+	header .btn-red {
+		position: absolute;
+		z-index: 1;
+		top: 508px;
+		left: 70px;
+	}
+}
+@media only screen and (max-width : 1045px) {
+	header{
+		.p-thin {
+			color: #fff;
+			font-size: 26px;
+			font-weight: 300;
+			line-height: 35px;
+		}
+	}
 }
 @media only screen and (max-width : 1020px) {
 	.top-menu{
@@ -12,14 +27,8 @@
 			padding: 0 10px;
 		}
 	}
-}
-
-@media only screen and (max-width : 1017px) {
-	.header-bot__item{
-		padding: 8px 2.3vw;
-		&.p-thin{
-			font-size: 3vw;
-		}
+	.footer-social{
+		padding: 38px 45px;
 	}
 }
 /* Medium Devices, Desktops */
@@ -38,8 +47,33 @@
 	.maps__content {
 		padding-left: 0px;
 	}
+	.header-bot__item{
+		text-align: center;
+	}
+	header{
+		.p-thin {
+			color: #fff;
+			font-size: 24px;
+			font-weight: 300;
+			line-height: 35px;
+		}
+	}
+	header .btn-red {
+		position: absolute;
+		z-index: 1;
+		top: 508px;
+		left: 20px;
+	}
+	.rs__text {
+		max-width: 423px;
+		font-size: 18px;
+	}
+	.rs__name {
+		font-size: 24px;
+		font-weight: 500;
+		padding-bottom: 12px;
+	}
 }
-
 
 @media only screen and (max-width : 991px) {
 	.header-top{
@@ -92,7 +126,21 @@
 		}
 	}
 }
-
+@media only screen and (max-width: 880px){
+		header{
+		.p-thin {
+			color: #fff;
+			font-size: 20px;
+			font-weight: 300;
+			line-height: 35px;
+		}
+	}
+}
+@media only screen and (max-width : 805px){
+	.footer-social {
+		padding: 35px 23px;
+	}
+}
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
@@ -115,15 +163,49 @@
 	.maps__content{
 		padding-left: 80px;
 	}
+	.btn-red-maps{
+		margin-left: 0px;
+	}
+	.rs__info {
+		padding-left: 100px;
+		margin: 0 100px;
+	}
+	.rs__text {
+		max-width: 423px;
+		font-size: 18px;
+		margin: 0 145px;
+		border: 0;
+	}
+}
+@media only screen and (max-width : 670px){
+	.footer-social i {
+		margin-right: 25px;
+		margin-bottom: 13px;
+	}
 }
 @media only screen and (max-width : 625px) {
 	.maps__content{
 		padding-left: 55px;
 	}
 }
+@media only screen and (max-width: 555px) {
+	.rs__info{
+		margin: 0 0px;
+	}
+	.rs__text {
+		max-width: 423px;
+		font-size: 18px;
+		margin: 0 40px;
+		border: 0;
+	}
+}
 @media only screen and (max-width: 525px) {
 	.maps__content {
 		padding-left: 40px;
+	}
+	.footer-social i {
+		margin-right: 5px;
+		margin-bottom: 0px;
 	}
 }
 /* Extra Small Devices, Phones */
@@ -139,6 +221,15 @@
 	}
 	.maps__content{
 		padding-left: 0px;
+	}
+	.footer-social i {
+		margin-right: 15px;
+		margin-bottom: 10px;
+		margin-right: 25px;
+		margin-bottom: 0px;
+	}
+	.btn-red-maps {
+		margin-left: 40px;
 	}
 	// 100% ширина окна
 	// .fancybox-wrap{

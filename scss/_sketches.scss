@@ -107,6 +107,7 @@ p{
     border-radius: 101px;
     border: 0;
     transition: 1.1s all;
+    position: absolute;
     &:hover{
         background-color: darken(#8f9ef3, 10);
     }

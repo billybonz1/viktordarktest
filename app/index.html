@@ -92,28 +92,30 @@
 
 		<div class="header-bot">
 			<div class="inner">
-
-						<div class="header-bot__item p-thin">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="header-bot__item p-thin col-sm-3 col-xs-6">
 							более 10 лет <br>
 							работы <br>
 							на рынке
 						</div>
-						<div class="header-bot__item p-thin">
+						<div class="header-bot__item p-thin col-sm-3 col-xs-6">
 							отличное <br>
 							качество <br>
 							сервиса
 						</div>
-						<div class="header-bot__item p-thin">
+						<div class="header-bot__item p-thin col-sm-3 col-xs-6">
 							скидки <br>
 							для постоянных <br>
 							клиентов
 						</div>
-						<div class="header-bot__item p-thin">
+						<div class="header-bot__item p-thin col-sm-3 col-xs-6">
 							индивидуальный <br>
 							подход к любой <br>
 							задаче
 						</div>
-
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -134,19 +136,31 @@
 							</p>
 							<ul id="about-company__slider" class="gallery content-slider list-unstyled clearfix">
 								<li>
-									<div class="pull-left">
+									<div class="pull-left pull-slider">
 										<img src="img/raster/car_before.png" alt="БИТАЯ">
+										<button class="btn-blue btn-blue-left">
+											До
+										</button>
 									</div>
-									<div class="pull-right">
+									<div class="pull-right pull-slider">
 										<img src="img/raster/car_after.png" alt="ЦЕЛАЯ">
+										<button class="btn-blue btn-blue-right">
+											После
+										</button>
 									</div>
 								</li>
 								<li>
-									<div class="pull-left">
+									<div class="pull-left pull-slider">
 										<img src="img/raster/car_before.png" alt="БИТАЯ">
+										<button class="btn-blue btn-blue-left">
+											До
+										</button>
 									</div>
-									<div class="pull-right">
+									<div class="pull-right pull-slider">
 										<img src="img/raster/car_after.png" alt="ЦЕЛАЯ">
+										<button class="btn-blue btn-blue-right">
+											После
+										</button>
 									</div>
 								</li>
 							</ul>
@@ -349,7 +363,7 @@
 						<ul id="reviews" class="gallery content-slider list-unstyled clearfix">
 							<li>
 								<div class="row">
-									<div class="col-md-4">
+									<div class="col-sm-4">
 										<div class="rs__info">
 											<div class="rs__name">
 												Ольга<br>
@@ -360,7 +374,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-md-8 rs__text">
+									<div class="col-sm-8 rs__text">
 										Здравствуйте! Ремонтировалась у вас не в первый раз, и снова приятно удивлена! Все четко, быстро, всегда в срок. Ребята просто молодцы! Огромное спасибо! Отдельное спасибо хочу сказать мастеру Марату за терпение! Желаю успехов!
 									</div>
 								</div>
@@ -435,9 +449,11 @@
 								<iframe src="https://api-maps.yandex.ua/frame/v1/-/CVhg6DIb" width="350" 								height="200" frameborder="0"></iframe>
 							</div>
 						</div>
-						<button class="btn-red btn-red_1 btn-red-maps">
-							ОТПРАВЬ ЗАЯВКУ НА РЕМОНТ!
-						</button>
+						<div class="row col-xs-12">
+							<button class="btn-red btn-red_1 btn-red-maps">
+								ОТПРАВЬ ЗАЯВКУ НА РЕМОНТ!
+							</button>
+						</div>
 					</div>
 			</div>
 		</div>
@@ -506,25 +522,39 @@
 
 	<footer>
 		<div class="inner">
-			<div class="footer__h">
-				AUTO-SERVICE
-			</div>
-			<div class="footer__p">
-				© 2015 Все права защищены.  23-50-67  mail@mail.ru
-			</div>
-			<div class="pull-right footer-social">
-				<i class="icon icon-f">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="footer__content col-xs-8">
+						<div class="footer__h">
+							AUTO-SERVICE
+						</div>
+						<div class="footer__p">
+							© 2015 Все права защищены.  23-50-67  mail@mail.ru
+						</div>
+					</div>
+					<div class="pull-right footer-social col-xs-4">
+						<a href="">
+							<i class="icon icon-f">
 
-				</i>
-				<i class="icon icon-vk">
+							</i>
+						</a>
+						<a href="">
+							<i class="icon icon-vk">
 
-				</i>
-				<i class="icon icon-t">
+							</i>
+						</a>
+						<a href="">
+							<i class="icon icon-t">
 
-				</i>
-				<i class="icon icon-g">
+							</i>
+						</a>
+						<a href="">
+							<i class="icon icon-g">
 
-				</i>
+							</i>
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</footer>

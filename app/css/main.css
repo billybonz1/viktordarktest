@@ -130,6 +130,19 @@ body textarea:required:valid {
 .about-company {
   padding-bottom: 75px; }
 
+.pull-slider {
+  position: relative; }
+  .pull-slider img {
+    max-width: 434px; }
+
+.btn-blue-left {
+  bottom: 15px;
+  left: 15px; }
+
+.btn-blue-right {
+  bottom: 15px;
+  right: 15px; }
+
 .auto-repair {
   background-color: #38569b;
   text-align: center; }
@@ -277,16 +290,14 @@ body textarea:required:valid {
     margin: auto; }
 
 footer {
-  background-color: #38569b;
-  height: 115px; }
+  background-color: #38569b; }
 
 .footer__h {
   color: white;
   font-size: 18px;
   font-weight: 700;
   display: inline-block;
-  padding: 40px 0;
-  padding-right: 60px; }
+  margin-right: 115px; }
 
 .footer__p {
   color: white;
@@ -296,21 +307,34 @@ footer {
   display: inline-block; }
 
 .footer-social {
-  margin-top: 40px; }
+  padding: 38px 81px; }
   .footer-social i {
     max-height: 35px;
     margin-right: 5px; }
 
+.footer__content {
+  padding: 44px 27px; }
+
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  header .btn-red {
+    position: absolute;
+    z-index: 1;
+    top: 508px;
+    left: 70px; } }
+
+@media only screen and (max-width: 1045px) {
+  header .p-thin {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 35px; } }
+
 @media only screen and (max-width: 1020px) {
   .top-menu li {
-    padding: 0 10px; } }
-
-@media only screen and (max-width: 1017px) {
-  .header-bot__item {
-    padding: 8px 2.3vw; }
-    .header-bot__item.p-thin {
-      font-size: 3vw; } }
+    padding: 0 10px; }
+  .footer-social {
+    padding: 38px 45px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -323,7 +347,26 @@ footer {
   .auto-repair__item {
     padding: 40px 0px; }
   .maps__content {
-    padding-left: 0px; } }
+    padding-left: 0px; }
+  .header-bot__item {
+    text-align: center; }
+  header .p-thin {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 35px; }
+  header .btn-red {
+    position: absolute;
+    z-index: 1;
+    top: 508px;
+    left: 20px; }
+  .rs__text {
+    max-width: 423px;
+    font-size: 18px; }
+  .rs__name {
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 12px; } }
 
 @media only screen and (max-width: 991px) {
   .header-top {
@@ -371,6 +414,17 @@ footer {
         -ms-transform: scale(1);
         transform: scale(1); } }
 
+@media only screen and (max-width: 880px) {
+  header .p-thin {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 35px; } }
+
+@media only screen and (max-width: 805px) {
+  .footer-social {
+    padding: 35px 23px; } }
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .auto-parts__item {
@@ -386,15 +440,42 @@ footer {
     padding: 0px 0px;
     width: 50%; }
   .maps__content {
-    padding-left: 80px; } }
+    padding-left: 80px; }
+  .btn-red-maps {
+    margin-left: 0px; }
+  .rs__info {
+    padding-left: 100px;
+    margin: 0 100px; }
+  .rs__text {
+    max-width: 423px;
+    font-size: 18px;
+    margin: 0 145px;
+    border: 0; } }
+
+@media only screen and (max-width: 670px) {
+  .footer-social i {
+    margin-right: 25px;
+    margin-bottom: 13px; } }
 
 @media only screen and (max-width: 625px) {
   .maps__content {
     padding-left: 55px; } }
 
+@media only screen and (max-width: 555px) {
+  .rs__info {
+    margin: 0 0px; }
+  .rs__text {
+    max-width: 423px;
+    font-size: 18px;
+    margin: 0 40px;
+    border: 0; } }
+
 @media only screen and (max-width: 525px) {
   .maps__content {
-    padding-left: 40px; } }
+    padding-left: 40px; }
+  .footer-social i {
+    margin-right: 5px;
+    margin-bottom: 0px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -406,7 +487,14 @@ footer {
     padding: 0px 0px;
     width: 70%; }
   .maps__content {
-    padding-left: 0px; } }
+    padding-left: 0px; }
+  .footer-social i {
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-right: 25px;
+    margin-bottom: 0px; }
+  .btn-red-maps {
+    margin-left: 40px; } }
 
 h1 {
   color: #0f335b;
@@ -518,7 +606,8 @@ p {
   border-radius: 101px;
   border: 0;
   -webkit-transition: 1.1s all;
-  transition: 1.1s all; }
+  transition: 1.1s all;
+  position: absolute; }
   .btn-blue:hover {
     background-color: #6176ee; }
 

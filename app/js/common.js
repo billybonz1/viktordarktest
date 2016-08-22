@@ -54,7 +54,39 @@ $(function() {
 		pager: false,
 		responsive : [
 			{
-				breakpoint:800,
+				breakpoint:992,
+				settings: {
+					item:10,
+					slideMove:1,
+					slideMargin:6,
+				}
+			},
+			{
+				breakpoint:815,
+				settings: {
+					item:8,
+					slideMove:1,
+					slideMargin:6,
+				}
+			},
+			{
+				breakpoint:705,
+				settings: {
+					item:6,
+					slideMove:1,
+					slideMargin:6,
+				}
+			},
+			{
+				breakpoint:550,
+				settings: {
+					item:4,
+					slideMove:1,
+					slideMargin:6,
+				}
+			},
+			{
+				breakpoint:380,
 				settings: {
 					item:3,
 					slideMove:1,
@@ -62,12 +94,13 @@ $(function() {
 				}
 			},
 			{
-				breakpoint:480,
+				breakpoint:350,
 				settings: {
 					item:2,
-					slideMove:1
+					slideMove:1,
+					slideMargin:6,
 				}
-			}
+			},
 		],
 		onSliderLoad: function (el) {
 			el.next().appendTo(el.parents(".lSSlideOuter"));

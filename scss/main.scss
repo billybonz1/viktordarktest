@@ -52,6 +52,20 @@ body textarea:required:valid{
 .about-company{
     padding-bottom: 75px;
 }
+.pull-slider{
+    position: relative;
+    img{
+        max-width: 434px;
+    }
+}
+.btn-blue-left{
+    bottom: 15px;
+    left: 15px;
+}
+.btn-blue-right{
+    bottom: 15px;
+    right: 15px;
+}
 .auto-repair{
     background-color: #38569b;
     text-align: center;
@@ -225,29 +239,15 @@ body textarea:required:valid{
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 footer{
     background-color: #38569b;
-    height: 115px;
 }
 .footer__h{
     color: white;
     font-size: 18px;
     font-weight: 700;
     display: inline-block;
-    padding: 40px 0;
-    padding-right: 60px;
+    margin-right: 115px;
 }
 .footer__p{
     color: white;
@@ -257,11 +257,14 @@ footer{
     display: inline-block;
 }
 .footer-social{
-    margin-top: 40px;
+    padding: 38px 81px;
     i{
         max-height: 35px;
         margin-right: 5px;
     }
+}
+.footer__content{
+    padding: 44px 27px;
 }
 
 
