@@ -38,8 +38,8 @@ $(function() {
 		item:1,
 		slideMargin:0,
 		loop:true,
-		prevHtml: "<i class='icon icon-arrow-left-blue'></i>",
-		nextHtml: "<i class='icon icon-arrow-right-blue'></i>",
+		prevHtml: "<div class='bg-reviews'><i class='icon arrow-left-small'></i></div>",
+		nextHtml: "<div class='bg-reviews'><i class='icon arrow-right-small'></i></div>",
 		addClass: 'reviews',
 		pager:false
 	});

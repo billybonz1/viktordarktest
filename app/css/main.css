@@ -91,6 +91,16 @@
   width: 38px;
   height: 37px; }
 
+.arrow-left-small {
+  background: url("../img/icons/arrow-left-small.png");
+  width: 11px;
+  height: 16px; }
+
+.arrow-right-small {
+  background: url("../img/icons/arrow-right-small.png");
+  width: 11px;
+  height: 16px; }
+
 *::-webkit-input-placeholder {
   color: #666;
   opacity: 1; }
@@ -131,9 +141,11 @@ body textarea:required:valid {
   padding-bottom: 75px; }
 
 .pull-slider {
-  position: relative; }
+  position: relative;
+  width: 50%; }
   .pull-slider img {
-    max-width: 434px; }
+    height: auto;
+    width: 100%; }
 
 .btn-blue-left {
   bottom: 15px;
@@ -208,12 +220,32 @@ body textarea:required:valid {
 .reviews-slider h2 {
   text-align: center; }
 
+.bg-reviews {
+  background-color: #7d9ddc;
+  width: 44px;
+  height: 43px; }
+
 .reviews-slider__border {
   border: 2px solid #7d9ddc;
-  margin-top: 85px; }
+  margin-top: 85px;
+  padding: 0; }
 
 .reviews ul li {
   padding: 93px 0; }
+
+.reviews .lSAction > .lSPrev {
+  background-position: 0 0;
+  left: 0px; }
+
+.bg-reviews {
+  position: relative; }
+  .bg-reviews i {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    position: absolute; }
 
 .rs__info {
   padding-left: 100px; }
@@ -228,7 +260,6 @@ body textarea:required:valid {
   text-align: left; }
 
 .rs__text {
-  max-width: 620px;
   border-left: 2px solid #7d9ddc;
   color: #141414;
   font-size: 16px;
@@ -237,6 +268,8 @@ body textarea:required:valid {
   padding-top: 15px;
   padding-bottom: 25px;
   padding-left: 48px; }
+  .rs__text p {
+    padding-right: 62px; }
 
 .images__content {
   margin-top: 80px; }
@@ -256,8 +289,10 @@ body textarea:required:valid {
 
 .btn-red-maps {
   margin-top: 50px;
-  margin-left: 245px;
-  margin-bottom: 45px; }
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+  display: block; }
 
 .slider-car {
   background: #ededed;
@@ -347,7 +382,7 @@ footer {
   .auto-repair__item {
     padding: 40px 0px; }
   .maps__content {
-    padding-left: 0px; }
+    padding-left: 15px; }
   .header-bot__item {
     text-align: center; }
   header .p-thin {
@@ -361,12 +396,23 @@ footer {
     top: 508px;
     left: 20px; }
   .rs__text {
-    max-width: 423px;
-    font-size: 18px; }
+    font-size: 18px;
+    padding: 0 78px;
+    border: 0; }
+    .rs__text p {
+      padding-right: 0px; }
   .rs__name {
     font-size: 24px;
     font-weight: 500;
-    padding-bottom: 12px; } }
+    padding-bottom: 12px; }
+  .reviews-slider__border {
+    text-align: center; }
+  .rs__info {
+    padding: 0; }
+  .rs__car {
+    text-align: center; }
+  .maps__content__item {
+    text-align: center; } }
 
 @media only screen and (max-width: 991px) {
   .header-top {
@@ -435,44 +481,45 @@ footer {
     width: 100%;
     text-align: center; }
   .images__content__item {
-    margin: 0px 0px;
-    margin-left: 160px;
+    margin: 0px auto;
     padding: 0px 0px;
     width: 50%; }
-  .maps__content {
-    padding-left: 80px; }
-  .btn-red-maps {
-    margin-left: 0px; }
-  .rs__info {
-    padding-left: 100px;
-    margin: 0 100px; }
   .rs__text {
-    max-width: 423px;
     font-size: 18px;
-    margin: 0 145px;
-    border: 0; } }
+    border: 0;
+    padding: 0 40px; }
+  .pull-slider {
+    position: relative;
+    width: 100%; }
+    .pull-slider img {
+      height: auto;
+      width: 100%; }
+  .header-bot {
+    height: auto;
+    position: relative; }
+  .header-slider.gallery li {
+    min-height: 650px;
+    background-position: center; }
+  .lSSlideOuter.header-slider .lSPager.lSpg {
+    bottom: 20px; }
+  .header-bot {
+    background-color: #233b5b; } }
 
 @media only screen and (max-width: 670px) {
   .footer-social i {
     margin-right: 25px;
     margin-bottom: 13px; } }
 
-@media only screen and (max-width: 625px) {
-  .maps__content {
-    padding-left: 55px; } }
-
 @media only screen and (max-width: 555px) {
   .rs__info {
     margin: 0 0px; }
-  .rs__text {
+  .rs__text p {
     max-width: 423px;
     font-size: 18px;
     margin: 0 40px;
     border: 0; } }
 
 @media only screen and (max-width: 525px) {
-  .maps__content {
-    padding-left: 40px; }
   .footer-social i {
     margin-right: 5px;
     margin-bottom: 0px; } }
@@ -482,8 +529,6 @@ footer {
   .pad {
     padding: 20px 5px !important; }
   .images__content__item {
-    margin: 0px 0px;
-    margin-left: 60px;
     padding: 0px 0px;
     width: 70%; }
   .maps__content {
@@ -493,8 +538,13 @@ footer {
     margin-bottom: 10px;
     margin-right: 25px;
     margin-bottom: 0px; }
-  .btn-red-maps {
-    margin-left: 40px; } }
+  header .p-thin {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 35px; }
+  .maps__content__item__maps iframe {
+    width: 100%; } }
 
 h1 {
   color: #0f335b;

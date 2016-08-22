@@ -45,7 +45,7 @@
 		padding: 40px 0px;
 	}
 	.maps__content {
-		padding-left: 0px;
+		padding-left: 15px;
 	}
 	.header-bot__item{
 		text-align: center;
@@ -65,13 +65,29 @@
 		left: 20px;
 	}
 	.rs__text {
-		max-width: 423px;
 		font-size: 18px;
+		padding: 0 78px;
+		border: 0;
+		p{
+			padding-right: 0px;
+		}
 	}
 	.rs__name {
 		font-size: 24px;
 		font-weight: 500;
 		padding-bottom: 12px;
+	}
+	.reviews-slider__border{
+		text-align: center;
+	}
+	.rs__info{
+		padding: 0;
+	}
+	.rs__car{
+		text-align: center;
+	}
+	.maps__content__item{
+		text-align: center;
 	}
 }
 
@@ -155,26 +171,36 @@
 		text-align: center;
 	}
 	.images__content__item {
-		margin: 0px 0px;
-		margin-left: 160px;
+		margin: 0px auto;
 		padding: 0px 0px;
 		width: 50%;
 	}
-	.maps__content{
-		padding-left: 80px;
-	}
-	.btn-red-maps{
-		margin-left: 0px;
-	}
-	.rs__info {
-		padding-left: 100px;
-		margin: 0 100px;
-	}
 	.rs__text {
-		max-width: 423px;
 		font-size: 18px;
-		margin: 0 145px;
 		border: 0;
+		padding: 0 40px;
+	}
+	.pull-slider{
+		position: relative;
+		width: 100%;
+		img{
+			height: auto;
+			width: 100%;
+		}
+	}
+	.header-bot {
+		height: auto;
+		position: relative;
+	}
+	.header-slider.gallery li {
+		min-height: 650px;
+		background-position: center;
+	}
+	.lSSlideOuter.header-slider .lSPager.lSpg {
+		bottom: 20px;
+	}
+	.header-bot {
+		background-color: rgb(35, 59, 91);
 	}
 }
 @media only screen and (max-width : 670px){
@@ -184,25 +210,21 @@
 	}
 }
 @media only screen and (max-width : 625px) {
-	.maps__content{
-		padding-left: 55px;
-	}
 }
 @media only screen and (max-width: 555px) {
 	.rs__info{
 		margin: 0 0px;
 	}
 	.rs__text {
-		max-width: 423px;
-		font-size: 18px;
-		margin: 0 40px;
-		border: 0;
+		p{
+			max-width: 423px;
+			font-size: 18px;
+			margin: 0 40px;
+			border: 0;
+		}
 	}
 }
 @media only screen and (max-width: 525px) {
-	.maps__content {
-		padding-left: 40px;
-	}
 	.footer-social i {
 		margin-right: 5px;
 		margin-bottom: 0px;
@@ -214,8 +236,6 @@
 		padding: 20px 5px !important;
 	}
 	.images__content__item {
-		margin: 0px 0px;
-		margin-left: 60px;
 		padding: 0px 0px;
 		width: 70%;
 	}
@@ -228,8 +248,14 @@
 		margin-right: 25px;
 		margin-bottom: 0px;
 	}
-	.btn-red-maps {
-		margin-left: 40px;
+	header .p-thin {
+		color: #fff;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 35px;
+	}
+	.maps__content__item__maps iframe{
+		width: 100%;
 	}
 	// 100% ширина окна
 	// .fancybox-wrap{
@@ -237,5 +263,7 @@
 	// 	left: 0 !important;
 	// }
 }
+
+
 
 

@@ -92,6 +92,16 @@
   width: 38px;
   height: 37px; }
 
+.arrow-left-small {
+  background: url("../img/icons/arrow-left-small.png");
+  width: 11px;
+  height: 16px; }
+
+.arrow-right-small {
+  background: url("../img/icons/arrow-right-small.png");
+  width: 11px;
+  height: 16px; }
+
 body {
   font-family: Roboto; }
 

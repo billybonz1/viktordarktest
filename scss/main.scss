@@ -54,8 +54,10 @@ body textarea:required:valid{
 }
 .pull-slider{
     position: relative;
+    width: 50%;
     img{
-        max-width: 434px;
+        height: auto;
+        width: 100%;
     }
 }
 .btn-blue-left{
@@ -143,15 +145,36 @@ body textarea:required:valid{
         text-align: center;
     }
 }
+.bg-reviews{
+    background-color: #7d9ddc;
+    width: 44px;
+    height: 43px;
+}
 .reviews-slider__border{
     border: 2px solid #7d9ddc;
     margin-top: 85px;
+    padding: 0;
 }
 .reviews{
     ul{
         li{
             padding: 93px 0;
         }
+    }
+    .lSAction>.lSPrev {
+        background-position: 0 0;
+        left: 0px;
+    }
+}
+.bg-reviews{
+    position: relative;
+    i{
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        position: absolute;
     }
 }
 .rs__info{
@@ -167,7 +190,6 @@ body textarea:required:valid{
     text-align: left;
 }
 .rs__text{
-    max-width: 620px;
     border-left: 2px solid #7d9ddc;
     color: #141414;
     font-size: 16px;
@@ -176,6 +198,9 @@ body textarea:required:valid{
     padding-top: 15px;
     padding-bottom: 25px;
     padding-left: 48px;
+    p{
+        padding-right: 62px;
+    }
 }
 .images__content{
     margin-top: 80px;
@@ -196,8 +221,10 @@ body textarea:required:valid{
 }
 .btn-red-maps{
     margin-top: 50px;
-    margin-left: 245px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 45px;
+    display: block;
 }
 .slider-car{
     background: #ededed;
