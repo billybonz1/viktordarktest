@@ -55,9 +55,9 @@
 
 <body>
 	<header>
-		<button class="btn-red btn-red_1">
+		<a href="#form-repair-popup" class="btn-red btn-red_1 popup">
 			ОТПРАВЬ ЗАЯВКУ НА РЕМОНТ!
-		</button>
+		</a>
 		<div class="header-top">
 			<div class="inner">
 				<div class="container-fluid">
@@ -301,9 +301,9 @@
 							сведения о машине ( модель, объем двигателя, год выпуска, пробег), а так же пожелания по обработке
 							заказа.
 						</p>
-						<button class="btn-red btn-red_2">
+						<a href="#form-spare-popup" class="btn-red btn-red_2 popup btn">
 							ЗАКАЗАТЬ ЗАПЧАСТИ
-						</button>
+						</a>
 					</div>
 				</div>
 
@@ -473,9 +473,11 @@
 						<div class="col-xs-12">
 							<div class="row">
 								<div class="col-xs-12">
-									<button class="btn-red btn-red_1 btn-red-maps">
-										ОТПРАВЬ ЗАЯВКУ НА РЕМОНТ!
-									</button>
+									<div class="text-center">
+										<a href="#form-repair-popup" class="btn-red btn-red_1 popup btn-red-maps">
+											ОТПРАВЬ ЗАЯВКУ НА РЕМОНТ!
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -583,6 +585,203 @@
 			</div>
 		</div>
 	</footer>
+	<div id="form-spare-popup" class="mfp-hide">
+		<div class="form-spare form-overall">
+			<div class="inner">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="row">
+							<div class="col-md-5">
+								<p class="form-spare__p form-overall__p">
+									Как к Вам обращаться?
+								</p>
+							</div>
+							<div class="col-md-7">
+								<input type="text" class="form-spare__item form-overall__item">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-5">
+								<p class="form-spare__p form-overall__p">
+									Контактный телефон
+								</p>
+							</div>
+							<div class="col-md-7">
+								<input type="text" class="form-spare__item form-overall__item">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-5">
+								<p class="form-spare__p form-overall__p">
+									E-mail
+								</p>
+							</div>
+							<div class="col-md-7">
+								<input type="text" class="form-spare__item form-overall__item">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-5">
+								<p class="form-spare__p form-overall__p">
+									Марка автомобиля
+								</p>
+							</div>
+							<div class="col-md-7">
+								<input type="text" class="form-spare__item form-overall__item">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-5">
+								<p class="form-spare__p form-overall__p">
+									Номер VIN
+								</p>
+							</div>
+							<div class="col-md-7">
+								<input type="text" class="form-spare__item form-overall__item">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-5">
+								<p class="form-spare__p form-overall__p">
+									Название детали и номер
+								</p>
+							</div>
+							<div class="col-md-7">
+								<input type="text" class="form-spare__item form-overall__item">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-5">
+								<p class="form-spare__p form-overall__p">
+									Комментарий
+								</p>
+							</div>
+							<div class="col-md-7">
+								<textarea class="form-spare__item form-overall__item" name="text" id=""></textarea>
+							</div>
+						</div>
+
+						<div class="row form-spare__btn-margin form-overall__btn-margin">
+							<div class="col-md-12">
+								<button class="form-spare__btn form-overall__btn">
+									заказать запчасти
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="form-repair-popup" class="mfp-hide">
+		<div class="form-repair form-overall">
+			<div class="inner">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="row">
+							<div class="col-md-5">
+								<p class="form-repair__p form-overall__p">
+									Выберите автотехцентр
+								</p>
+							</div>
+							<div class="col-md-7">
+								<select name="text" id="" class="form-repair__item form-overall__item">
+									<option value="1">Выберите автотехцентр 1</option>
+									<option value="2">Выберите автотехцентр 2</option>
+									<option value="3">Выберите автотехцентр 3</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-5">
+								<p class="form-repair__p form-overall__p">
+									Выберите вид ремонта
+								</p>
+							</div>
+							<div class="col-md-7">
+								<select name="text" id="" class="form-repair__item form-overall__item">
+									<option value="1">Выберите вид ремонта 1</option>
+									<option value="2">Выберите вид ремонта 2</option>
+									<option value="3">Выберите вид ремонта 3</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-5">
+								<p class="form-repair__p form-overall__p">
+									Марка и модель Вашего<br>
+									автомобиля
+								</p>
+							</div>
+							<div class="col-md-7">
+								<input type="text" class="form-repair__item form-overall__item">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-5">
+								<p class="form-repair__p form-overall__p">
+									Как к Вам обращаться?
+								</p>
+							</div>
+							<div class="col-md-7">
+								<input type="text" class="form-repair__item form-overall__item">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-5">
+								<p class="form-repair__p form-overall__p">
+									Контактный телефон
+								</p>
+							</div>
+							<div class="col-md-7">
+								<input type="text" class="form-repair__item form-overall__item">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-5">
+								<p class="form-repair__p form-overall__p">
+									E-mail
+								</p>
+							</div>
+							<div class="col-md-7">
+								<input type="text" class="form-repair__item form-overall__item">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-5">
+								<p class="form-repair__p form-overall__p">
+									Комментарий
+								</p>
+							</div>
+							<div class="col-md-7">
+								<textarea class="form-repair__item form-overall__item" name="text" id=""></textarea>
+							</div>
+						</div>
+
+						<div class="row form-repair__btn-margin form-overall__btn-margin">
+							<div class="col-md-12">
+								<button class="form-repair__btn form-overall__btn">
+									Отправить заявку на ремонт
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 
 
 

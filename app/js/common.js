@@ -118,6 +118,10 @@ $(function() {
 		$(".top-menu").toggleClass('active');
 		event.stopPropagation();
 	});
+	$('.popup').magnificPopup({
+		type:'inline',
+		midClick: true
+	});
 });
 
 //Форма отправки 2.0

@@ -44,7 +44,8 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'./app/libs/jquery/jquery-1.11.2.min.js',
 		'./app/libs/plugins-scroll/plugins-scroll.js',
-		'./app/libs/lightslider/dist/js/lightslider.min.js'
+		'./app/libs/lightslider/dist/js/lightslider.min.js',
+		'./app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
 		])
 		.pipe(concat('libs.js'))
 		//.pipe(uglify()) //Minify libs.js

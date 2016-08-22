@@ -292,7 +292,7 @@ body textarea:required:valid {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 45px;
-  display: block; }
+  display: inline-block; }
 
 .slider-car {
   background: #ededed;
@@ -349,6 +349,66 @@ footer {
 
 .footer__content {
   padding: 44px 27px; }
+
+.form-overall {
+  max-width: 614px;
+  background-color: white;
+  border: 2px solid #8f9ef3;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 18px rgba(0, 0, 0, 0.34);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.34);
+  padding: 90px 35px;
+  margin: 0 auto; }
+  .form-overall p {
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight: 500; }
+
+.form-overall__item {
+  background-color: #dee3fe;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 0;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  text-indent: 15px;
+  width: 100%;
+  display: block;
+  resize: none;
+  height: 39px; }
+  .form-overall__item:focus {
+    background-color: #adb9fd;
+    outline: 0; }
+
+.form-overall__p {
+  padding: 1px 1px; }
+
+textarea.form-overall__item {
+  height: 100px; }
+
+.form-overall__btn-margin {
+  text-align: center; }
+
+.form-overall__btn {
+  background-color: #23365a;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: white;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: 0;
+  padding: 12px 44px;
+  margin-top: 50px; }
+  .form-overall__btn:hover {
+    background-color: #4062a3;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all; }
+
+.form-repair {
+  padding: 40px 35px; }
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -610,7 +670,7 @@ p {
   font-family: "Segoe UI";
   font-size: 20px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 44px;
   background-color: #ce334c;
   -webkit-border-radius: 9px;
   border-radius: 9px;
@@ -633,9 +693,12 @@ p {
     -webkit-transition: .1s all;
     transition: .1s all;
     height: 50%; }
-  .btn-red:hover {
-    background-color: #bb2d44; }
-    .btn-red:hover:after {
+  .btn-red:hover, .btn-red:focus {
+    text-decoration: none;
+    color: #fff;
+    background-color: #bb2d44;
+    outline: 0; }
+    .btn-red:hover:after, .btn-red:focus:after {
       opacity: 0.25; }
 
 .btn-red_1 {
@@ -678,6 +741,9 @@ p {
   margin-top: 20px; }
   .btn-blue2:hover {
     background-color: #557fd1; }
+
+.btn {
+  display: inline-block; }
 
 .text-center {
   text-align: center; }

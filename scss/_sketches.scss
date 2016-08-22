@@ -63,7 +63,7 @@ p{
     font-family: "Segoe UI";
     font-size: 20px;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 44px;
     background-color: #ce334c;
     border-radius: 9px;
     height: 47px;
@@ -83,8 +83,11 @@ p{
         transition: .1s all;
         height: 50%;
     }
-    &:hover{
+    &:hover,&:focus{
+        text-decoration: none;
+        color: #fff;
         background-color: darken(#ce334c, 5);
+        outline: 0;
         &:after{
             opacity: 0.25;
         }
@@ -127,6 +130,9 @@ p{
     &:hover{
         background-color: darken(#7d9ddc, 10);
     }
+}
+.btn{
+    display: inline-block;
 }
 .text-center{
     text-align: center;
