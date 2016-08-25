@@ -45,7 +45,10 @@ gulp.task('scripts', function() {
 		'./app/libs/jquery/jquery-1.11.2.min.js',
 		'./app/libs/plugins-scroll/plugins-scroll.js',
 		'./app/libs/lightslider/dist/js/lightslider.min.js',
-		'./app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
+		'./app/libs/jquery-ui/ui/widget.js',
+		'./app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
+		'./app/libs/blueimp-file-upload/js/jquery.iframe-transport.js',
+		'./app/libs/blueimp-file-upload/js/jquery.fileupload.js'
 		])
 		.pipe(concat('libs.js'))
 		//.pipe(uglify()) //Minify libs.js
