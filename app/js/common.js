@@ -118,6 +118,10 @@ $(function() {
 		$(".top-menu").toggleClass('active');
 		event.stopPropagation();
 	});
+
+    $('.popup').magnificPopup({
+        mainClass: "mfp-scale"
+	});
 });
 
 //Форма отправки 2.0
@@ -219,4 +223,13 @@ $(function() {
 		}
 		return false;
 	})
+
+	$(".auto-repair__item").on("click",function () {
+		var id = $(this).data("content");
+		$("#" + id).show();
+    });
+
+	$(".krest").on("click",function () {
+        $(".block-mfp").hide();
+    });
 });
